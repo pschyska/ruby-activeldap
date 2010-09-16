@@ -8,7 +8,7 @@ module ActiveLdap
           #   alias_method_chain :view_runtime, :active_ldap
           # else
           #   alias_method_chain :rendering_runtime, :active_ldap
-          end
+          # end
         end
       end
 
