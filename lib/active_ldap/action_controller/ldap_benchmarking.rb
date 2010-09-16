@@ -3,11 +3,11 @@ module ActiveLdap
     module LdapBenchmarking
       def self.included(base)
         base.class_eval do
-          alias_method_chain :render_with_benchmark, :active_ldap
-          if private_method_defined?(:view_runtime)
-            alias_method_chain :view_runtime, :active_ldap
-          else
-            alias_method_chain :rendering_runtime, :active_ldap
+          # alias_method_chain :render_with_benchmark, :active_ldap
+          # if private_method_defined?(:view_runtime)
+          #   alias_method_chain :view_runtime, :active_ldap
+          # else
+          #   alias_method_chain :rendering_runtime, :active_ldap
           end
         end
       end
